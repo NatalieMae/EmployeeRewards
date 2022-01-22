@@ -17,7 +17,7 @@ Otherwise output:'Ship set of knives'
 
 
 // variable declaration
-let associateBanker = [56123, 0, 0]; //employeeId, checking, years
+let associateBanker = [56123, 5, 4]; //employeeId, checking, years
 
 let empId = associateBanker[0]       //employee Id number
 let empChecking = associateBanker[1] //number of new checking 
@@ -26,13 +26,57 @@ let empYears = associateBanker[2];   //years employed
 //continue same pattern/naming convention for each banker
 //leaving only one variable declaration section uncommented each 'Run'
 
-/* 
+let seniorBanker = [77227, 1, 2];
+
 let empId = seniorBanker[0]       
 let empChecking = seniorBanker[1]
 let empYears = seniorBanker[2];   
-*/
 
+let juniorBanker = [66225, 5, 3,];
 
+let empId = juniorBanker[0]
+let empChecking = juniorBanker[1];
+let empYears = juniorBanker[2];
+
+let temporaryBanker = [56677, 5, 3];
+
+let empId = temporaryBanker[0];
+let empChecking = temporaryBanker[1];
+let empYears = temporaryBanker[2];
+
+let midBanker = [22151, 2, 6];
+
+let empId = midBanker[0];
+let empChecking = midBanker[1];
+let empYears = midBanker[2];
+
+if (empYears === 1 + empChecking === 1) {
+    console.log('Ship $50.00 Amazon Gift Card')
+}
+else {
+    console.log('Incentive not met')
+}
+
+if (empYears === 2 + empChecking >= 3){
+    console.log('Ship $400.00 Amazon Gift Card')
+}
+else {
+    console.log('Ship $100.00 Visa Gift Card')
+}
+
+if (empYears === 3 + empChecking >= 2) {
+    console.log('Ship $700.00 Visa Gift Card')
+}
+else {
+    console.log('Ship $350.00 Visa Gift Card')
+}
+
+if (empYears >= 5 + empChecking >= 1) {
+    console.log('Ship #3500.00 Visa Gift Card')
+}
+else {
+    console.log('Ship set of knives')
+}
 //<--Your code goes here-->
 
 
